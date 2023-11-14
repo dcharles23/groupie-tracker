@@ -1,0 +1,20 @@
+{{define "layout"}}
+<html>
+  <head>
+    <title>{{template "title" .}}</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+  <body>
+    <header class="headerHeader"></header>
+    <main class="mainMain">
+      <div class = "s1img">
+      <section class="s1">
+        <h1 class="s1Header">Artistipedia</h1>
+      </section>
+    </div>
+      {{ template "content" . }}
+    </main>
+  </body>
+</html>
+{{end}}
